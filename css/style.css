@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #fff;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  width: 60%; }
+
+.display {
+  position: absolute;
+  top: 10vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto 5%;
+  z-index: -1; }
+
+.movie {
+  min-height: 10vh;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 10px; }
+
+.Poster {
+  margin-bottom: 10px; }
+
+img {
+  object-fit: cover;
+  object-position: center;
+  width: 150px;
+  border-radius: 10px; }
+
+.next, .prev {
+  position: fixed;
+  display: flex;
+  background: black;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  width: 90px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer; }
+
+.next {
+  bottom: 0;
+  right: 0; }
+
+.prev {
+  bottom: 0;
+  left: 0; }
+
+.visible {
+  opacity: 1; }
+
+.tresult {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 999;
+  font-weight: bold;
+  font-size: 20px; }
+
+.detailPoster:hover {
+  transform: scale(1.5);
+  cursor: pointer; }
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.homeImage {
+  width:fit-content; }
+
+.button {
+  padding: 10px 30px 10px 30px !important; }
+
+/*            detail css */
+.basketWrapper {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  display: none; }
+
+.detailBasketPoster {
+  width: 100px; }
+
+.basket-body {
+  width: 100px; }
+
+.movieText {
+  font-weight: bold;
+  font-size: 18px;
+  color: black; }
+
+.movieTextHome {
+  font-weight: bold;
+  font-size: 20px;
+  color: black; }
+
+.basketIcon {
+  font-size: 45px;
+  color: green; }
+
+.basketIconWrapper {
+  cursor: pointer; }
+
+@media only screen and (max-width: 768px) {
+  .description {
+    max-width: 200px; }
+  .tresult {
+    display: none; }
+  .movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+  .movielinkItem a {
+    position: relative;
+    right: 50px; } }

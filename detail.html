@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Bootsrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Font Awesome css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Zoom css -->
+    <link rel="stylesheet" href="./Lcss/lightbox.css" media="screen">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-12 d-flex justify-content-center mt-4 mb-4">
+            <h1>Film inceleme</h1>
+        </div>
+        <div class="detailFilm"></div>
+        <div class="d-flex justify-content-center mt-5" onclick="onPostClick()">
+            <div class="text-center basketIconWrapper">
+                <p class="mx-2 basketTextNode"> Sepetime Gitmek için Tıkla</p> <i
+                    class="fas fa-shopping-basket basketIcon"></i>
+            </div>
+        </div>
+        <div class="basketWrapper  mt-3 text-secondary">
+            <h2 class="d-flex justify-content-center mt-1 mb-2">Sepetimdeki Filmler</h2>
+            <div class="basket">
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Main Script -->
+<script src="./js/detail.js"></script>
+
+<!-- Zoom scripts -->
+<script src="./lightBoxx/jquery-3.6.0.min.js"></script>
+<script src="./lightBoxx/lightbox.js"></script>
+
+<!-- Bootsrap Script -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</html>
