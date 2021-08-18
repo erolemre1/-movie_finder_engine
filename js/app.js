@@ -1,4 +1,4 @@
-const API_KEY = "b979415";
+const API_KEY = API_KEY;
 const input = document.querySelector("#input");
 const button = document.querySelector(".button");
 const next = document.querySelector(".next");
